@@ -1,11 +1,12 @@
-import java.util.Random;
+import java.util.Scanner;
 public class WeekDayName 
 {
     public static void main(String args[])
     {
-        Random number = new Random();
-        int WeekDayNumber = number.nextInt(7) + 1;
-        switch (WeekDayNumber) 
+        Scanner input = new Scanner(System.in);
+        int WeekDayNumber = input.nextInt();
+        WeekDayNumber = WeekDayNumber%10;
+        switch (WeekDayNumber)
         {
             case 1: System.out.println("Monday");
                     break;
@@ -20,7 +21,7 @@ public class WeekDayName
             case 6:System.out.println("Saturday");
                     break;
             case 7:System.out.println("Sunday");
-                    break;
+                    break;  
         }
     }
 }
