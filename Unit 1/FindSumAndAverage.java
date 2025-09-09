@@ -13,5 +13,6 @@ public class FindSumAndAverage
         }
         System.out.println("Sum is: "+sum);
         System.out.println("Average is: " + (float)sum/5);
+        input.close();
     }    
 }

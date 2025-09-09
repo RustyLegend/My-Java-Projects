@@ -11,5 +11,6 @@ public class vowelOrConsonant
         if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') System.out.println("It is a vowel");
         else if ( !(ch >= 'a' && ch <= 'z') ) System.out.println("Error.");
         else System.out.println("It is a consonant");
+        sc.close();
     }
 }

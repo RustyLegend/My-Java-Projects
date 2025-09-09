@@ -14,5 +14,6 @@ public class RightTrianglePattern
             }
             System.out.println();
         }
+        input.close();
     }
 }

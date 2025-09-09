@@ -26,5 +26,6 @@ public class polynomial
         {
             System.out.println("Imaginary roots");
         }
+        input.close();
     }
 }

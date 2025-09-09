@@ -18,5 +18,6 @@ public class FloatingPointSame
         {
             System.out.println("They are NOT same upto 3 floating decimals");
         }
+        input.close();
     }
 }

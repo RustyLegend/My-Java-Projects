@@ -23,5 +23,6 @@ public class WeekDayName
             case 7:System.out.println("Sunday");
                     break;  
         }
+        input.close();
     }
 }

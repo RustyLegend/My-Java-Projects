@@ -34,7 +34,7 @@ class BankAccount
     }
 }
 
-class Bank
+class Banker
 {
     BankAccount b1 = new BankAccount();
     void start()
@@ -63,6 +63,7 @@ class Bank
                 System.out.println("Enter a valid choice.");
                 break;
         }
+        sc.close();
     }
 }
 
@@ -71,7 +72,7 @@ public class bankinjava
 {
     public static void main(String[] args) 
     {
-        Bank bank = new Bank();
+        Banker bank = new Banker();
         bank.start();
     }
 }

@@ -23,7 +23,7 @@ class account
     }
 }
 
-public class bank 
+public class practiceBank
 {
     public static void main(String[] args) 
     {
@@ -48,5 +48,6 @@ public class bank
             a.withdraw(amount);
         }
         else System.out.println("Invalid choice.");
+        sc.close();
     }    
 }
