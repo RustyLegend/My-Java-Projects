@@ -1,4 +1,4 @@
-public class Sample 
+public class addTwoVariables 
 {
     public static void main(String args[])
     {

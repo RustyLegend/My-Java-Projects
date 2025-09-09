@@ -1,36 +1,48 @@
 import java.util.Scanner;
-
 public class arthimeticoperations 
 {
+    static void add(float a , float b)
+    {
+        System.out.println(a + " + " + b + " = " + (a+b));
+    }
+
+    static void subtract(float a , float b)
+    {
+        System.out.println(a + " - " + b + " = " + (a-b));
+    }
+
+    static void multiply(float a , float b)
+    {
+        System.out.println(a + " * " + b + " = " + (a*b));
+    }
+
+    static void divide(float a , float b)
+    {
+        if(b==0) System.out.println("Division by zero error.");
+        else System.out.println(a + " / " + b + " = " + (a/b));
+    }
+
+    static void modulo(float a , float b)
+    {
+        if(b==0) System.out.println("Modulo by zero error.");
+        else System.out.println(a + " % " + b + " = " + (a%b));
+    }
+
     public static void main(String[] args) 
     {
         Scanner sc = new Scanner(System.in);
-        char c = 'Y';
-        while(c == 'Y' || c == 'y')
-        {
-            System.out.print("Enter number 1: ");
-            float a = sc.nextFloat();
-            System.out.print("Enter number 2: ");
-            float b = sc.nextFloat();
-            System.out.println("1 - Addition\n2 - Subtraction\n3 - Multiplication\n4 - Division\n5- Modulo");
-            int ch = sc.nextInt();
-            if(ch == 1) System.out.println(a + " + " + b +" = " +(a+b));
-            else if(ch == 2) System.out.println(a + " - " + b + " = " + (a-b));
-            else if(ch == 3)System.out.println(a + " x " + b + " = " + (a*b));
-            else if(ch == 4)
-            {
-                if(b == 0) System.out.println("Division not possible.");
-                else System.out.println(a + " / " + b + " = " + (a/b));
-            }
-            else if(ch == 5)
-            {
-                if(b == 0) System.out.println("Modulo not possible.");
-                else System.out.println(a + " % " + b + " = " + (a%b));
-            }
-            else System.out.println("Enter a correct number.");
-            System.out.print("Do you want to continue {y/n} : ");
-            c = sc.next().charAt(0);
-        }
+        System.out.print("Enter 1st operand: ");
+        float a = sc.nextFloat();
+        System.out.print("Enter 2nd operand: ");
+        float b = sc.nextFloat();
+        System.out.println(" + , - , * , / , % ?");
+        char operator = sc.next().charAt(0);
+        if (operator == '+') add(a, b);
+        else if (operator == '-') subtract(a, b);
+        else if (operator == '*') multiply(a, b);
+        else if (operator == '/') divide(a, b);
+        else if (operator == '%') modulo(a, b);
+        else System.out.println("Incorrect operator.");
         sc.close();
     }
 }
