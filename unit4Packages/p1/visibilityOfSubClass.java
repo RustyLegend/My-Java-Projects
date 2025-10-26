@@ -1,4 +1,4 @@
-package p1;
+package unit4Packages.p1;
 
 public class visibilityOfSubClass 
 {

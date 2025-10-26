@@ -8,11 +8,10 @@ public class vowelsException
 {
     public static void main(String[] args) 
     {
-        String s1 = "Hello";
         String s2 = "BCD";
         try
         {
-            if(!(s2.contains("a") || s2.contains("e") || s2.contains("i") || s2.contains("o") || s2.contains("u")))
+            if(!(s2.toLowerCase().contains("a") || s2.toLowerCase().contains("e") || s2.toLowerCase().contains("i") || s2.toLowerCase().contains("o") || s2.toLowerCase().contains("u")))
             {
                 throw new vowels("Does not contain vowels");
             }
